@@ -279,7 +279,7 @@ export function checkCapacity(lines: LineItem[]): string[] {
   const errors: string[] = [];
   const main = lines.filter((l) => l.section === 'main').length;
   const local = lines.filter((l) => l.section === 'local').length;
-  if (main > 8) errors.push(`${main} main rows exceed the 8 equipment rows on the form.`);
-  if (local > 20) errors.push(`${local} local rows exceed the 20 Local Materials/Accessories rows on the form.`);
+  if (main > 11) errors.push(`${main} main rows exceed the 11 equipment rows on the form.`);
+  if (local > 26) errors.push(`${local} local rows exceed the 26 Local Materials/Accessories rows on the form.`);
   return errors;
 }
