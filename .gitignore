@@ -1,0 +1,4 @@
+node_modules
+dist
+test-output.xlsx
+test-inventory.xlsx

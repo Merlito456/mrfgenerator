@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b6ad8"/>
+      <stop offset="0.55" stop-color="#0877c4"/>
+      <stop offset="1" stop-color="#0e8a8a"/>
+    </linearGradient>
+    <linearGradient id="head" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b6ad8"/>
+      <stop offset="1" stop-color="#0e8a8a"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4ade80"/>
+      <stop offset="1" stop-color="#16a34a"/>
+    </linearGradient>
+    <filter id="sheetShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#052f5e" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- app tile -->
+  <rect x="8" y="8" width="240" height="240" rx="44" fill="url(#tile)"/>
+  <rect x="8" y="8" width="240" height="240" rx="44" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+
+  <!-- MRF sheet -->
+  <g filter="url(#sheetShadow)">
+    <rect x="52" y="42" width="120" height="158" rx="10" fill="#ffffff"/>
+    <!-- template-style blue header band -->
+    <rect x="52" y="42" width="120" height="30" rx="10" fill="url(#head)"/>
+    <rect x="52" y="62" width="120" height="10" fill="url(#head)"/>
+    <text x="112" y="62" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#ffffff" letter-spacing="1">MRF</text>
+    <!-- field lines -->
+    <rect x="64" y="86" width="34" height="7" rx="2" fill="#9fb6cf"/>
+    <rect x="104" y="86" width="56" height="7" rx="2" fill="#d7e2ee"/>
+    <rect x="64" y="101" width="34" height="7" rx="2" fill="#9fb6cf"/>
+    <rect x="104" y="101" width="56" height="7" rx="2" fill="#d7e2ee"/>
+    <!-- item table rows -->
+    <rect x="64" y="120" width="96" height="7" rx="2" fill="#0b6ad8" opacity="0.85"/>
+    <rect x="64" y="135" width="96" height="7" rx="2" fill="#c9d7e6"/>
+    <rect x="64" y="150" width="96" height="7" rx="2" fill="#c9d7e6"/>
+    <rect x="64" y="165" width="70" height="7" rx="2" fill="#c9d7e6"/>
+  </g>
+
+  <!-- generator bolt badge -->
+  <circle cx="176" cy="176" r="34" fill="url(#bolt)" stroke="#ffffff" stroke-width="5"/>
+  <path d="M182 154 L164 182 h11 l-5 22 20 -30 h-12 l6 -20 z" fill="#ffffff" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>
